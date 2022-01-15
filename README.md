@@ -18,7 +18,7 @@
 
 ## Deployment
 #### Installation steps
-- git clone https://github.com/vinga2805/relayr-test.git
+- git clone https://github.com/aniketshinde7/DevOps-Assignment.git
 - cd relayr-test/configurations/
 - docker build -t aniketshinde7/my-app:latest . 
 - docker login
