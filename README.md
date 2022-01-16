@@ -4,10 +4,10 @@
 - Helm is initiated.
 
 ### Manifest file for Deployment using Helm
-#### Webapp
-- Deployment: configuration/helmcharts/webapp/templates/deployment.yaml
-- service: configuration/helmcharts/webapp/templates/service.yaml
-- values: configuration/helmcharts/webapp/values.yaml
+#### my-app
+- Deployment: configuration/helmcharts/my-app/templates/deployment.yaml
+- service: configuration/helmcharts/my-app/templates/service.yaml
+- values: configuration/helmcharts/my-app/values.yaml
 #### mysql
 - Deployment: configuration/helmcharts/mysql/templates/deployment.yaml
 - service: configuration/helmcharts/mysql/templates/service.yaml
@@ -29,8 +29,8 @@
 - tag: latest
 - cd helmcharts
 - helm install --name mysql mysql
-- helm install --name webapp webapp
-- minikune service webapp --url
+- helm install --name my-app my-app
+- minikune service my-app --url
 - Initialize the database with sample schema
 - curl http://$NODE_IP:$NODE_PORT/init
 - Insert some sample data via postman
