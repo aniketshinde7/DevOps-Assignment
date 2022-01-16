@@ -23,7 +23,7 @@
 - docker build -t aniketshinde7/my-app:latest . 
 - docker login
 - docker push aniketshinde7/my-app:latest
-- vi helmcharts/webapp/values.yaml
+- vi helmcharts/my-app/values.yaml
 - make changes in image1 as below 
 - image1: aniketshinde7/my-app
 - tag: latest
