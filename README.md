@@ -1,7 +1,7 @@
 ### Assumption
 - The app has been tested successfully on minikube installed on my windows laptop.
 - I have created persistence volume on C:/Users folder.
-- Helm is initiated and tiller is running.
+- Helm is initiated.
 
 ### Manifest file for Deployment using Helm
 #### Webapp
@@ -19,7 +19,7 @@
 ## Deployment
 #### Installation steps
 - git clone https://github.com/aniketshinde7/DevOps-Assignment.git
-- cd relayr-test/configurations/
+- cd DevOps-Assignment/configurations/
 - docker build -t aniketshinde7/my-app:latest . 
 - docker login
 - docker push aniketshinde7/my-app:latest
@@ -28,6 +28,7 @@
 - image1: aniketshinde7/my-app
 - tag: latest
 - cd helmcharts
+- helm install --name mysql mysql
 - helm install --name webapp webapp
 - minikune service webapp --url
 - Initialize the database with sample schema
